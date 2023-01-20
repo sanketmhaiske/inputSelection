@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task</title>
+</head>
+
+<body>
+    <div style='border: 2px solid #ea657c;
+    padding: 24px;
+    margin: 5rem 0;
+    border-radius: 8px; 
+    width: 20rem;'>
+        <input type="text" id="search" placeholder="Search" onkeyup="Search()" style="width: 18rem;"/>
+        <div style="display: flex; flex-direction: column;" id="Countries">
+            <span style="font-size: 10px;">Will search for only selected countries</span>
+            <span>
+                <input type="checkbox" id="Afganistan" value="Afganistan" onchange="myFunction('Afganistan')">
+                <label for="Afganistan"> Afganistan </label>
+            </span>
+            <span>
+                <input type="checkbox" id="Algeria" value="Algeria" onchange="myFunction('Algeria')">
+                <label for="Algeria"> Algeria </label>
+            </span>
+            <span>
+                <input type="checkbox" id="Angola" value="Angola" onchange="myFunction('Angola')">
+                <label for="Angola"> Angola </label>
+            </span>
+            <span>
+                <input type="checkbox" id="Andorra" value="Andorra" onchange="myFunction('Andorra')">
+                <label for="Andorra"> Andorra </label>
+            </span>
+            <span>
+                <input type="checkbox" id="Albania" value="Albania" onchange="myFunction('Albania')">
+                <label for="Albania"> Albania </label>
+            </span>
+            <span>
+                <input type="checkbox" id="Argentina" value="Argentina" onchange="myFunction('Argentina')">
+                <label for="Argentina"> Argentina </label>
+            </span>
+        </div>
+        <!-- ***** -->
+        <div style="display: flex; flex-direction: column;" id="searchCountries">
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
